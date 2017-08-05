@@ -1,0 +1,44 @@
+<!--detail.wxml-->
+<view class="cell" style="font-size: 36rpx">
+  {{baby.title}}
+  <view class="line" style="background: lightGray; width: 100%; height: 1rpx;"></view>
+</view>
+<view class="cell" style="color:Red;">
+  {{baby.price}}
+  <view class="line" style="background: lightGray; width: 100%; height: 1rpx;"></view>
+</view>
+<view class="cell" style="color:Coral;">
+  {{baby.connection}}
+  <view class="line" style="background: lightGray; width: 100%; height: 1rpx;"></view>
+</view>
+<view class="cell" style="color:MediumAquaMarine;">
+  所属地区：{{baby.province + baby.area}}
+  <view class="line" style="background: lightGray; width: 100%; height: 1rpx;"></view>
+</view>
+<view class="cell" style="color:MediumPurple;">
+  {{baby.address}}
+  <view class="line" style="background: lightGray; width: 100%; height: 1rpx;"></view>
+</view>
+<view class="cell" style="color:DarkGray;">
+  {{baby.age}}
+  <view class="line" style="background: lightGray; width: 100%; height: 1rpx;"></view>
+</view>
+<view class="cell" style="color:IndianRed;">
+  {{baby.project}}
+  <view class="line" style="background: lightGray; width: 100%; height: 1rpx;"></view>
+</view>
+<view class="cell" style="color:Peru;">
+  {{baby.security}}
+  <view class="line" style="background: lightGray; width: 100%; height: 1rpx;"></view>
+</view>
+<view class="cell" style="color:DodgerBlue;">
+  {{baby.judge}}
+  <view class="line" style="background: lightGray; width: 100%; height: 1rpx;"></view>
+</view>
+<view class="cell" style="color:DarkGray;">
+  {{baby.detail}}
+  <view class="line" style="background: lightGray; width: 100%; height: 1rpx;"></view>
+</view>
+<block wx:for="{{baby.images}}">
+  <image src="{{item}}" mode='widthFix' style="width: 100%;" bindtap="imageClick" data-image="{{item}}"></image>
+</block>
