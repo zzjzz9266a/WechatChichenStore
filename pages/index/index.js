@@ -48,7 +48,7 @@ Page({
 
 function getProvinces(page){
   wx.request({
-    url: 'http://47.94.140.221:9090/api/province',
+    url: 'https://baby.zhangzhijie.net/api/province',
     method: 'POST',
     success: function(res){
       provinces = res.data
@@ -61,7 +61,7 @@ function getProvinces(page){
 function loadData(page){
   page.setData({ hidden: false })
   wx.request({
-    url: 'http://47.94.140.221:9090/api/list',
+    url: 'https://baby.zhangzhijie.net/api/list',
     method: 'POST',
     data: {'province': province},
     success: function (res) {
@@ -83,7 +83,7 @@ function loadMore(page){
   isLoading = true
   page.setData({ hidden: false })
   wx.request({
-    url: 'http://47.94.140.221:9090/api/list',
+    url: 'http://zhangzhijie.net:9090/api/list',
     method: 'POST',
     data: {'province': province, 'page': babyGroup.current_page+1},
     success: function(res){

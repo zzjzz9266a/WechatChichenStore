@@ -36,7 +36,7 @@ Page({
 function loadData(page) {
   page.setData({ hidden: false })
   wx.request({
-    url: 'http://47.94.140.221:9090/api/detail/'+id,
+    url: 'http://zhangzhijie.net:9090/api/detail/'+id,
     method: 'POST',
     success: function (res) {
       console.log(res.data)
