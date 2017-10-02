@@ -83,7 +83,7 @@ function loadMore(page){
   isLoading = true
   page.setData({ hidden: false })
   wx.request({
-    url: 'http://zhangzhijie.net:9090/api/list',
+		url: 'https://baby.zhangzhijie.net/api/list',
     method: 'POST',
     data: {'province': province, 'page': babyGroup.current_page+1},
     success: function(res){

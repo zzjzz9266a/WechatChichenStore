@@ -32,7 +32,8 @@
 }
 .item{
 	width: 100%;
-	padding: 0 12rpx 0 12rpx;
+	/* padding: 12rpx 12rpx 12rpx 12rpx; */
+	margin: 12rpx;
 }
 .text{
   font-size: 28rpx;
@@ -47,7 +48,7 @@
 .date{
   font-size: 28rpx;
   color: lightgray; 
-	margin-right: 10rpx;
+	/* margin-right: 10rpx; */
 	float: right;
 }
 
