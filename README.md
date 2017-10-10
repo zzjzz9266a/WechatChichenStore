@@ -1,4 +1,2 @@
 # WechatChichenStore
-a sell system written by WeChat Mini Program for a chicken store
-
-only use in China
+网络一线牵，珍惜这段缘~~
